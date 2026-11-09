@@ -1,0 +1,76 @@
+sports={"futbol","tennis","voleybol","futbol","basketbol"}
+print(sports)
+sports.add("uzguculuk")
+sports.remove("tennis")
+sports.discard("gules")
+print(sports)
+
+print("----------------------------------")
+
+
+mallar={"ses ucaldan","sican","klaviyatura","monitor","mikrafon"}
+axtarilan=input("Axtardiginiz mehsul: ")
+if axtarilan in mallar:
+    print("Bu mehsul var")
+else:
+    print("Bu mehsul yoxdur")
+for i in mallar:
+    print(i)
+
+
+print("----------------------------------")
+
+            
+#3 və 4 ü yazammadim
+
+
+masin={
+    "marka":"Toyota",
+    "model":"Supra",
+    "il":2020,
+    "reng":"qara"
+    }
+
+print(masin["model"])
+
+masin["reng"]="ag"
+masin["nov"]="supra s1000rr"
+
+print(masin)
+
+
+print("----------------------------------")
+
+
+inventory={
+    "qilinc":1,
+    "qalxan":2,
+    "iskir":5
+}
+
+inventory["ox"]=20
+del inventory["qalxan"]
+
+silinen=inventory.pop("iskir")
+print(f"silinen: {silinen}")
+
+print(inventory)
+
+
+print("----------------------------------")
+
+
+citis={
+    "Baki":2200000,
+    "Gence":330000,
+    "Sumqayit":350000,
+    "Şeki":68000,
+    "Lenkeran":90000
+}
+
+for city in citis:
+    if citis[city]>100000:
+        print(city, citis[city])
+
+
+
